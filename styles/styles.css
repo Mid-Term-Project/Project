@@ -24,6 +24,7 @@ h1{
     font-size: 6rem;
     font-weight: 700;
     color: var(--title);
+    line-height: 7rem;
 }
 
 h2{
@@ -52,6 +53,12 @@ p{
     
 }
 
+a{
+    text-decoration: none;
+}
+
+/* Our Projects */
+
 .projects{
     margin: 2rem 15rem;
 }
@@ -70,3 +77,108 @@ p{
     width: 34rem;
     height: 24rem;
 }
+
+
+
+
+
+
+
+/* Hero Banner */
+
+.pr{
+    padding-right: 3rem;
+}
+
+.container{
+    max-width: 144rem;
+    padding: 0 17rem 0 17rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    padding: 0 1.2rem 0 1.2rem;
+}
+
+.col-6 div:first-child{
+
+    max-width: 100%;
+    width: 78rem;
+    height: 62.3rem;
+    background-color: red;
+
+}
+
+/* .img-fluid{
+
+} */
+
+.img-fluid{
+    width: 28rem;
+    height: 29rem;
+}
+
+.text-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-align p{
+    margin: 3rem 0 3rem 0;
+}
+
+#hero-banner{
+    width: 100%;
+    height: 800vh;
+    padding-top: 5rem;
+}
+
+#hehero-banner .button-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+#hero-banner .btn-get-in-touch{
+    font-size: 1.7rem;
+    display: inline-block;
+    text-align: center;
+    background: var(--btn);
+    color: #FFF;
+    padding: 1rem 3rem 1.2rem 3rem;
+    transition: 0.5s;
+}
+
+#hero-banner .btn-get-in-touch:hover{
+    background: var(--hover);
+}
+
+#hero-banner .btn-see-our-work{
+    margin-left: 3rem;
+    font-size: 1.7rem;
+    color: var(--title);
+    /* padding: 0.8rem 2rem 0.8rem 2rem; */
+    display: inline-flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#hero-banner .btn-see-our-work:hover{
+    color: var(--btn);
+}
+
+#hero-banner .animated{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(1rem);
+    }
+    100%{
+        transform: translateY(-1rem);
+    }
+}
+
