@@ -57,16 +57,44 @@ p{
 }
 
 .projects h2{
-
+    width: 5rem;
 }
 
-.project-box{
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card-box{
     height: 44rem;
     background-color: #FFFFFF;
     margin-top: 2rem;
+    box-shadow: 0rem 3.8rem 7.7rem rgba(0, 0, 0, 0.1);
 }
 
-.project-box img{
+.card-box img{
     width: 34rem;
     height: 24rem;
+}
+
+.card-box h3,p,a{
+    margin: 2.5rem;
+    font-size: 1.7rem;
+}
+
+.card-box h3{
+    font-size: 2.4rem;
+    margin-bottom: 0rem;
+}
+
+.card-box p{
+    margin-top: 0.7rem;
+    margin-bottom: 6rem;
+}
+
+.card-box a{
+    text-decoration: none;
+}
+
+.card-box a:visited{
+    color: #072AC8;
 }
