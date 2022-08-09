@@ -6,6 +6,8 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
   }
 
   :root {
@@ -13,7 +15,7 @@ html {
     --btn: #072AC8;
     --text: #6B708D;
     --hover: #43D2FF;
-    --background: #F4F6FC
+    --background: #F4F6FC;
 }
 
 /* GLOBAL */
@@ -48,4 +50,23 @@ p{
     font-weight: 400;
     color: var(--text);
     
+}
+
+.projects{
+    margin: 2rem 15rem;
+}
+
+.projects h2{
+
+}
+
+.project-box{
+    height: 44rem;
+    background-color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.project-box img{
+    width: 34rem;
+    height: 24rem;
 }
