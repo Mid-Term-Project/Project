@@ -70,6 +70,12 @@ p{
     background-color: #FFFFFF;
     margin-top: 2rem;
     box-shadow: 0rem 3.8rem 7.7rem rgba(0, 0, 0, 0.1);
+    transition: all 600ms;
+}
+
+.card-box:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0rem 0rem 5rem #9d00ecc0;
 }
 
 .card-box img{
