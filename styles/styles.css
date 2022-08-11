@@ -67,6 +67,7 @@ p{
 .cards{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .card-box{
