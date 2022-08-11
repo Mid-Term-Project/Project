@@ -1,5 +1,5 @@
 *{
-    margin: 0px;
+    margin-top: 0px;
     padding: 0px;
 }
 
@@ -11,6 +11,7 @@ html {
   }
 
   :root {
+    --opinions: #292E47;
     --title: #514D67;
     --btn: #072AC8;
     --text: #6B708D;
@@ -52,6 +53,108 @@ p{
     
 }
 
+
+/* NavBar */
+header nav {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 8.6rem;
+    align-items: baseline;
+}
+
+header img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 6rem;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem;
+    font-size: 1.7rem;
+}
+
+header button{
+    background-color: var(--btn);
+    border: none;
+    color: white;
+    padding: 1.5rem 3.3rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+/* Opinions Section */
+#opinions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: var(--opinions);
+    margin-left: 6rem;
+    margin-right: 6rem;
+    height: 62rem;
+}
+
+#opinions .memojis{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#opinions .memojis img{
+    width: 15rem;
+}
+
+#opinions #centered {
+    align-items: center;
+    flex-direction: column;
+}
+
+#opinions #centered div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#opinions #centered h3{
+    color: white;
+}
+
+#opinions #centered p{
+    color: #FFC600;
+}
+
+#opinions #centered div h6{
+    color: #A2D6F9;
+}
+
+#opinions #centered div p{
+    color: white;
+}
+
+#opinions #centered div img{
+    border-radius: 60%;
+    width: 5rem;
+}
+
+#opinions #centered div div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+=======
 
 /* Projects Section */
 
@@ -175,4 +278,5 @@ footer div:last-child ul li a::before {
 footer div:last-child ul li a:hover::before{
     transform-origin: left;
     transform: scaleX(1);
+
 }
