@@ -1,5 +1,5 @@
 *{
-    margin-top: 6.8rem;
+    margin-top: 0px;
     padding: 0px;
 }
 
@@ -57,7 +57,7 @@ header nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 8.6rem;
+    padding-top: 8.6rem;
     align-items: baseline;
 }
 
