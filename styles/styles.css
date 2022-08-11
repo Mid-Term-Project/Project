@@ -9,7 +9,6 @@ html {
   }
 
   :root {
-    --opinions: #292E47;
     --title: #514D67;
     --btn: #072AC8;
     --text: #6B708D;
@@ -95,11 +94,12 @@ header button{
 #opinions {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     flex-wrap: nowrap;
     flex-direction: row;
-    background-color: var(--opinions);
+    background-image: url("/images/testimonial-section/orbit.png");
+    background-color: #292E47; 
     margin-left: 6rem;
     margin-right: 6rem;
     height: 62rem;
