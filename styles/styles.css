@@ -1,4 +1,4 @@
-*{
+* {
     margin-top: 0px;
     padding: 0px;
 }
@@ -8,9 +8,9 @@ html {
     font-size: 62.5%;
     background-color: var(--background);
     font-family: 'Roboto', sans-serif;
-  }
+}
 
-  :root {
+:root {
     --opinions: #292E47;
     --title: #514D67;
     --btn: #072AC8;
@@ -21,36 +21,36 @@ html {
 
 /* GLOBAL */
 
-h1{
+h1 {
     font-size: 6rem;
     font-weight: 700;
     color: var(--title);
 }
 
-h2{
+h2 {
     font-size: 5rem;
     font-weight: 700;
     color: var(--title);
 }
 
-h3{
+h3 {
     font-size: 4rem;
     font-weight: 700;
     color: var(--title);
 }
 
-h4{
+h4 {
     font-size: 2.4rem;
     font-weight: 500;
     color: var(--title);
 
 }
 
-p{
+p {
     font-size: 2rem;
     font-weight: 400;
     color: var(--text);
-    
+
 }
 
 
@@ -71,12 +71,12 @@ header img {
     width: 6rem;
 }
 
-header ul{
+header ul {
     display: flex;
     flex-direction: row;
 }
 
-header ul li{
+header ul li {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -84,7 +84,7 @@ header ul li{
     font-size: 1.7rem;
 }
 
-header button{
+header button {
     background-color: var(--btn);
     border: none;
     color: white;
@@ -108,13 +108,13 @@ header button{
     height: 62rem;
 }
 
-#opinions .memojis{
+#opinions .memojis {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-#opinions .memojis img{
+#opinions .memojis img {
     width: 15rem;
 }
 
@@ -123,34 +123,34 @@ header button{
     flex-direction: column;
 }
 
-#opinions #centered div{
+#opinions #centered div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-#opinions #centered h3{
+#opinions #centered h3 {
     color: white;
 }
 
-#opinions #centered p{
+#opinions #centered p {
     color: #FFC600;
 }
 
-#opinions #centered div h6{
+#opinions #centered div h6 {
     color: #A2D6F9;
 }
 
-#opinions #centered div p{
+#opinions #centered div p {
     color: white;
 }
 
-#opinions #centered div img{
+#opinions #centered div img {
     border-radius: 60%;
     width: 5rem;
 }
 
-#opinions #centered div div{
+#opinions #centered div div {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -158,22 +158,24 @@ header button{
 
 /* Projects Section */
 
-.projects{
+#projects,
+#services {
     margin: 2rem 15rem;
 }
 
-.projects h2{
+.projects h2 {
     width: 15rem;
     font-size: 4rem;
 }
 
-.cards{
+.cards {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.card-box{
+
+.card-box {
     width: 34rem;
     height: 44rem;
     background-color: #FFFFFF;
@@ -182,79 +184,115 @@ header button{
     transition: all 600ms;
 }
 
-.card-box:hover{
+.card-box-hover:hover {
     transform: scale(1.1, 1.1);
     box-shadow: 0rem 0rem 5rem #9d00ecc0;
 }
 
-.card-box img{
+.card-box img {
     width: 34rem;
     height: 24rem;
 }
 
-.card-box h3,p,a{
+.card-box h3,
+p,
+a {
     margin: 2.5rem;
     font-size: 1.7rem;
 }
 
-.card-box h3{
+.card-box h3 {
     font-size: 2.4rem;
     margin-bottom: 0rem;
 }
 
-.card-box p{
+.card-box p {
     margin-top: 0.7rem;
     margin-bottom: 6rem;
 }
 
-.card-box a{
+.card-box a {
     text-decoration: none;
 }
 
-.card-box a:visited{
+.card-box a:visited {
     color: #072AC8;
 }
 
+/* services */
+#services .card-box{
+    height: 34rem;
+}
+.card-box .svg {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    background-color: #ECF7FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 600ms;
+}
+
+.card-box .svg img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.card-box .svg:hover{
+    background-color: black;
+}
+
+.card-box .svg:hover img{
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(180deg);
+}
+
+
+#services .cards .card-box p{
+    margin-bottom: 4rem;
+}
 /* footer */
 
-footer{
+footer {
     display: flex;
     margin: 6rem 15rem;
     justify-content: space-between;
 }
 
-footer > div > img{
+footer>div>img {
     width: 9.8rem;
     height: 3rem;
 }
 
-footer div:first-child{
+footer div:first-child {
     padding: 1.5rem;
     padding-left: 0;
 }
 
-footer div:first-child  p{
+footer div:first-child p {
     width: 25rem;
     margin-left: 0rem;
     font-size: 1.7rem;
 }
 
-footer div:last-child{
+footer div:last-child {
     width: 43.5rem;
 }
 
-footer div:last-child ul{
+footer div:last-child ul {
     display: flex;
     list-style: none;
     padding: 2rem;
     justify-content: space-between;
 }
 
-footer div:last-child ul li{
-   width: 25rem;
+footer div:last-child ul li {
+    width: 25rem;
 }
 
-footer div:last-child ul li a{
+footer div:last-child ul li a {
     margin: 0;
     position: relative;
     text-decoration: none;
@@ -273,9 +311,9 @@ footer div:last-child ul li a::before {
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 300ms ease-in-out;
-  }
+}
 
-footer div:last-child ul li a:hover::before{
+footer div:last-child ul li a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 
