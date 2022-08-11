@@ -127,6 +127,7 @@ footer > div > img{
 
 footer div:first-child{
     padding: 1.5rem;
+    padding-left: 0;
 }
 
 footer div:first-child  p{
