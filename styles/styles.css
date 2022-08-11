@@ -6,6 +6,8 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
   }
 
   :root {
@@ -14,7 +16,7 @@ html {
     --btn: #072AC8;
     --text: #6B708D;
     --hover: #43D2FF;
-    --background: #F4F6FC
+    --background: #F4F6FC;
 }
 
 /* GLOBAL */
@@ -50,6 +52,7 @@ p{
     color: var(--text);
     
 }
+
 
 /* NavBar */
 header nav {
@@ -151,4 +154,129 @@ header button{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+=======
+
+/* Projects Section */
+
+.projects{
+    margin: 2rem 15rem;
+}
+
+.projects h2{
+    width: 15rem;
+    font-size: 4rem;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-box{
+    width: 34rem;
+    height: 44rem;
+    background-color: #FFFFFF;
+    margin-top: 2rem;
+    box-shadow: 0rem 3.8rem 7.7rem rgba(0, 0, 0, 0.1);
+    transition: all 600ms;
+}
+
+.card-box:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0rem 0rem 5rem #9d00ecc0;
+}
+
+.card-box img{
+    width: 34rem;
+    height: 24rem;
+}
+
+.card-box h3,p,a{
+    margin: 2.5rem;
+    font-size: 1.7rem;
+}
+
+.card-box h3{
+    font-size: 2.4rem;
+    margin-bottom: 0rem;
+}
+
+.card-box p{
+    margin-top: 0.7rem;
+    margin-bottom: 6rem;
+}
+
+.card-box a{
+    text-decoration: none;
+}
+
+.card-box a:visited{
+    color: #072AC8;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    margin: 6rem 15rem;
+    justify-content: space-between;
+}
+
+footer > div > img{
+    width: 9.8rem;
+    height: 3rem;
+}
+
+footer div:first-child{
+    padding: 1.5rem;
+    padding-left: 0;
+}
+
+footer div:first-child  p{
+    width: 25rem;
+    margin-left: 0rem;
+    font-size: 1.7rem;
+}
+
+footer div:last-child{
+    width: 43.5rem;
+}
+
+footer div:last-child ul{
+    display: flex;
+    list-style: none;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+footer div:last-child ul li{
+   width: 25rem;
+}
+
+footer div:last-child ul li a{
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    color: var(--text);
+}
+
+footer div:last-child ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .3rem;
+    border-radius: .4rem;
+    background-color: var(--btn);
+    bottom: -.3rem;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+  }
+
+footer div:last-child ul li a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+
 }
