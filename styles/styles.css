@@ -94,12 +94,11 @@ header button{
 #opinions {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around ;
     text-align: center;
     flex-wrap: nowrap;
     flex-direction: row;
-    background-image: url("/images/testimonial-section/orbit.png");
-    background-color: #292E47; 
+    background-color: #292E47;
     margin-left: 6rem;
     margin-right: 6rem;
     height: 62rem;
@@ -124,6 +123,7 @@ header button{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
 #opinions #centered h3{
@@ -143,8 +143,9 @@ header button{
 }
 
 #opinions #centered div img{
-    border-radius: 60%;
+    border-radius: 50%;
     width: 5rem;
+    height: 5rem;
 }
 
 #opinions #centered div div{
