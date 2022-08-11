@@ -182,3 +182,14 @@ a{
     }
 }
 
+@media(max-width: 767px){
+    .container{
+        max-width: 100%;
+
+    }
+    
+    .row{
+        flex-direction: column;
+    }
+}
+
