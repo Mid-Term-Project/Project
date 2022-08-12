@@ -91,13 +91,14 @@ header button{
 }
 
 /* Opinions Section */
+
 #opinions{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     background: #292E47;
-    background-image: url("images/testimonial-section/orbit.png");
-    background-image: url("images/testimonial-section/orbit.png"), linear-gradient(#292E47, #292E47);
+    background-image: url("./images/testimonial-section/orbit.png");
+    background-image: url("./images/testimonial-section/orbit.png"), linear-gradient(#292E47, #292E47);
     background-size: cover;
     height: 62rem;
     margin-left: 7.6rem;
@@ -107,13 +108,13 @@ header button{
 #opinions div{
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-#opinions #paragraph{
-    justify-content: center;
+#opinions #center{
+    padding-top: 12rem;
 }
 
 #opinions img{
@@ -132,26 +133,37 @@ header button{
     size: 2.4rem;
 }
 
-#opinions div div div{
+#opinions #center div{
+    flex-direction: row;
+    padding-bottom: 5rem;
+}
+
+#opinions #center div div{
     flex-direction: column;
 }
 
-#opinions div div p{
+#opinions #center div p{
     margin-top: 0.5rem;
     padding-top: 0.5rem;
     color: white;
     size: 1.3rem;
+    padding: 0;
+    margin: 0;
 }
 
 #opinions div div #name{
     margin-bottom: 0px;
     padding-bottom: 0px;
     color: #A2D6F9;
-    size: 1.7rem; 
+    size: 1.7rem;
+    padding: 5rem 0 0 0;
+    margin: 0;
 }
 
-#opinions div #profilepic{
+#opinions #center #profilepic{
     border-radius: 50%;
     width: 5rem;
     height: 5rem;
+    padding: 0;
+    margin: 0;
 }
