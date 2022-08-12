@@ -94,7 +94,7 @@ header button{
 #opinions {
     display: flex;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-around;
     text-align: center;
     flex-wrap: nowrap;
     flex-direction: row;
