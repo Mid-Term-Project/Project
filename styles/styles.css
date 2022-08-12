@@ -91,9 +91,9 @@ header button{
 }
 
 /* Opinions Section */
-
 #opinions{
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
     background: #292E47;
@@ -106,6 +106,13 @@ header button{
     height: 62rem;
     margin-left: 7.6rem;
     margin-right: 9.1rem;
+}
+
+@media screen{
+    #opinions {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 #opinions div{
