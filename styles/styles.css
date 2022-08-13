@@ -6,6 +6,8 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
   }
 
   :root {
@@ -51,6 +53,11 @@ p{
 }
 
 /* NavBar */
+header{
+    padding-left: 17rem;
+    padding-right: 17rem;
+}
+
 header nav {
     background-color: var(--background);
     display: flex;
@@ -58,10 +65,14 @@ header nav {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 8.6rem;
+    padding-left: 0;
+    padding-right: 0;
     align-items: baseline;
 }
 
 header img {
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     flex-wrap: wrap;
     width: 6rem;
@@ -176,4 +187,17 @@ header button{
     height: 5rem;
     padding: 0;
     margin: 0;
+}
+
+/** Simplify **/
+
+#simplify{
+    padding-left: 17rem;
+    margin-right: 17rem;
+}
+
+#simplify img{
+    width: 90rem;
+    height: 44rem;
+    box-shadow: inset 5rem 5rem;
 }
