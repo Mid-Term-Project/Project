@@ -98,117 +98,6 @@ header button {
     font-size: 1.7rem;
 }
 
-/* Opinions Section */
-#opinions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    background-color: var(--opinions);
-    margin-left: 6rem;
-    margin-right: 6rem;
-    height: 62rem;
-}
-
-#opinions .memojis {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-#opinions .memojis img {
-    width: 15rem;
-}
-
-#opinions #centered {
-    align-items: center;
-    flex-direction: column;
-}
-
-#opinions #centered div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#opinions #centered h3 {
-    color: white;
-}
-
-#opinions #centered p {
-    color: #FFC600;
-}
-
-#opinions #centered div h6 {
-    color: #A2D6F9;
-}
-
-#opinions #centered div p {
-    color: white;
-}
-
-
-#opinions #centered div img {
-    border-radius: 60%;
-
-    width: 5rem;
-    height: 5rem;
-}
-
-#opinions #centered div div {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
-
-/* Projects Section */
-
-#projects,
-#services {
-
-    margin: 2rem 15rem;
-}
-
-.projects h2 {
-    width: 15rem;
-    font-size: 4rem;
-}
-
-.cards {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.card-box {
-    width: 34rem;
-    height: 44rem;
-    background-color: #FFFFFF;
-    margin-top: 2rem;
-    box-shadow: 0rem 3.8rem 7.7rem rgba(0, 0, 0, 0.1);
-    transition: all 600ms;
-}
-
-.card-box-hover:hover {
-    transform: scale(1.1, 1.1);
-    box-shadow: 0rem 0rem 5rem #9d00ecc0;
-}
-
-.card-box img {
-    width: 34rem;
-    height: 24rem;
-}
-
-
-
-
-
-
-
 /* Hero Banner */
 
 
@@ -329,16 +218,119 @@ header button {
     }
 }
 
+/* End Of hero Banner */
+
+/* Opinions Section */
+#opinions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: var(--opinions);
+    margin-left: 6rem;
+    margin-right: 6rem;
+    height: 62rem;
+}
+
+#opinions .memojis {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#opinions .memojis img {
+    width: 15rem;
+}
+
+#opinions #centered {
+    align-items: center;
+    flex-direction: column;
+}
+
+#opinions #centered div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#opinions #centered h3 {
+    color: white;
+}
+
+#opinions #centered p {
+    color: #FFC600;
+}
+
+#opinions #centered div h6 {
+    color: #A2D6F9;
+}
+
+#opinions #centered div p {
+    color: white;
+}
+
+
+#opinions #centered div img {
+    border-radius: 60%;
+
+    width: 5rem;
+    height: 5rem;
+}
+
+#opinions #centered div div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+/* Projects Section */
+
+#projects,
+#services {
+
+    margin: 2rem 15rem;
+}
+
+.projects h2 {
+    width: 15rem;
+    font-size: 4rem;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-box {
+    width: 34rem;
+    height: 44rem;
+    background-color: #FFFFFF;
+    margin-top: 2rem;
+    box-shadow: 0rem 3.8rem 7.7rem rgba(0, 0, 0, 0.1);
+    transition: all 600ms;
+}
+
+.card-box-hover:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0rem 0rem 5rem #9d00ecc0;
+}
+
+.card-box img {
+    width: 34rem;
+    height: 24rem;
+}
+
+
 
 
 
 /* Media Query */
 
-/* @media (max-width:992px){
-    .container{
-        padding: 0 2rem 0 2rem;
-    }
-} */
 @media (max-width:1024px){
     .container{
         padding: 0 2rem 0 2rem;
@@ -360,7 +352,11 @@ header button {
     }
 
     .row{
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .text-align h1{
+        margin-top: 3rem;
     }
     
     .text-align h1,p{
