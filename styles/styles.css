@@ -70,6 +70,16 @@ header nav {
     align-items: baseline;
 }
 
+@media (max-width: 930px) {
+    header nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+}
+
 header img {
     padding-left: 0;
     padding-right: 0;
