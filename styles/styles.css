@@ -63,7 +63,7 @@ header nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 8.6rem;
     padding-left: 0;
     padding-right: 0;
@@ -197,11 +197,20 @@ header button{
     flex-direction: column;
     padding-left: 17rem;
     margin-right: 17rem;
+    margin-top: 17rem;
+}
+
+@media (max-width: 800px) {
+    #simplify{
+        padding-left: 0;
+        margin-right: 0;
+    }
+    
 }
 
 #simplify #imageback{
     margin-top: 30rem;
-    width: 70%;
+    width: 80%;
     height: 40rem;
     background-image: url("../images/projects-section/1.jpg");
     filter: blur(8rem);
