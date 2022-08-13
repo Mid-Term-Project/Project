@@ -25,6 +25,7 @@ h1 {
     font-size: 6rem;
     font-weight: 700;
     color: var(--title);
+    line-height: 7rem;
 }
 
 h2 {
@@ -84,6 +85,9 @@ header ul li {
     font-size: 1.7rem;
 }
 
+a{
+    text-decoration: none;
+}
 header button {
     background-color: var(--btn);
     border: none;
@@ -164,6 +168,7 @@ header button {
 
 #projects,
 #services {
+
     margin: 2rem 15rem;
 }
 
@@ -197,6 +202,209 @@ header button {
     width: 34rem;
     height: 24rem;
 }
+
+
+
+
+
+
+
+/* Hero Banner */
+
+
+
+
+.container{
+    max-width: 144rem;
+    padding: 0 17rem 0 17rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    padding: 0 1.2rem 0 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#images-hero{
+    max-width: 52rem;
+    margin: 0;
+
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    /* background-color: #072AC8; */
+    position: relative;
+}
+
+.img-fluid{
+    position: absolute;
+    z-index: 1;
+    width: 55%;
+}
+
+
+#images-hero > .img-fluid:nth-child(1){
+    right: 55%;
+}
+
+#images-hero > .img-fluid:nth-child(2){
+    width: 50%;
+    top: 65%;
+    left: 50%;
+}
+
+
+
+
+#boy{
+    position: relative;
+    width: 100%;
+}
+
+.row > .col-6:nth-child(1){
+    width: 55rem;
+}
+
+
+.text-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.text-align p{
+    margin: 3rem 0 3rem 0;
+}
+
+#hero-banner .btn-get-in-touch{
+    font-size: 1.7rem;
+    display: inline-block;
+    text-align: center;
+    background: var(--btn);
+    color: #FFF;
+    padding: 1rem 3rem 1.2rem 3rem;
+    transition: 0.5s;
+}
+
+
+#hero-banner .btn-get-in-touch:hover{
+    background: var(--hover);
+}
+
+#hero-banner .btn-see-our-work{
+    margin-left: 3rem;
+    font-size: 1.7rem;
+    color: var(--title);
+    /* padding: 0.8rem 2rem 0.8rem 2rem; */
+    display: inline-flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#hero-banner .btn-see-our-work:hover{
+    color: var(--btn);
+}
+
+
+#hero-banner .animated{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+#hero-banner .animated:hover{
+    animation: none;
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(1rem);
+    }
+    100%{
+        transform: translateY(-1rem);
+    }
+}
+
+
+
+
+/* Media Query */
+
+/* @media (max-width:992px){
+    .container{
+        padding: 0 2rem 0 2rem;
+    }
+} */
+@media (max-width:1024px){
+    .container{
+        padding: 0 2rem 0 2rem;
+    }
+
+    .text-align h1{
+        font-size: 4.5rem;
+        line-height: 6rem;
+    }
+}
+
+@media (max-width:767px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3rem 0 3rem;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+    
+    .text-align h1,p{
+        text-align: center;
+    }
+
+    #hero-banner .animated{
+       animation: none;
+    }
+
+    #images-hero{
+       display: flex;
+       justify-content: center;
+    }
+
+    #boy{
+        max-width: 70%;
+    }
+
+    #hero-banner .button-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+
+    }
+
+    #hero-banner .btn-get-in-touch{
+        font-size: 1.4rem;
+    }
+
+    .row > .col-6:nth-child(1){
+        width: 100%;
+    }
+
+    .row > .col-6:nth-child(2){
+        margin-top: 2.5rem;
+    }
+
+
+    
+}
+
+/* END of Hero Banner */
+
 
 .card-box h3,
 p,
@@ -322,3 +530,4 @@ footer div:last-child ul li a:hover::before {
     transform: scaleX(1);
 
 }
+
