@@ -201,11 +201,23 @@ header button{
 
 #simplify #imageback{
     margin-top: 30rem;
-    width: 80%;
-    height: 44rem;
+    width: 70%;
+    height: 40rem;
     background-image: url("../images/projects-section/1.jpg");
     filter: blur(8rem);
     position: absolute;
+}
+
+@media (max-width: 1000px) {
+    #simplify #imageback{
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    #simplify #imageback{
+        width: 30%;
+    }
 }
 
 #simplify img{
@@ -216,7 +228,9 @@ header button{
 }
 
 #simplify div{
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #simplify #projectsText{
