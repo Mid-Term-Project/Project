@@ -93,6 +93,11 @@ header ul{
     flex-direction: row;
 }
 
+header nav a{
+    color: black;
+    text-decoration: none;
+}
+
 header ul li{
     display: flex;
     flex-direction: row;
@@ -229,13 +234,13 @@ header button{
 
 @media (max-width: 1000px) {
     #simplify #imageback{
-        width: 50%;
+        width: 70%;
     }
 }
 
 @media (max-width: 650px) {
     #simplify #imageback{
-        width: 30%;
+        width: 100%;
     }
 }
 
