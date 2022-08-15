@@ -1,1 +1,1 @@
-console.log("Script conectado")
+console.log("Script conectado correctamente")
