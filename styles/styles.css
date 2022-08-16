@@ -513,6 +513,66 @@ a {
 #services .cards .card-box p {
   margin-bottom: 4rem;
 }
+
+/** Simplify **/
+
+#simplify{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-left: 17rem;
+    margin-right: 17rem;
+    margin-top: 17rem;
+}
+
+@media (max-width: 800px) {
+    #simplify{
+        padding-left: 0;
+        margin-right: 0;
+    }
+    
+}
+
+#simplify #imageback{
+    margin-top: 30rem;
+    width: 80%;
+    height: 40rem;
+    background-image: url("../images/projects-section/1.jpg");
+    filter: blur(8rem);
+    position: absolute;
+}
+
+@media (max-width: 1000px) {
+    #simplify #imageback{
+        width: 70%;
+    }
+}
+
+@media (max-width: 650px) {
+    #simplify #imageback{
+        width: 100%;
+    }
+}
+
+#simplify img{
+    margin-top: 10rem;
+    position: relative;
+    width: 100%;
+    height: 44rem;
+}
+
+#simplify div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#simplify #projectsText{
+    margin-top: 10rem;
+}
+
+/* Final Simnplify */
+
 /* footer */
 
 footer {
