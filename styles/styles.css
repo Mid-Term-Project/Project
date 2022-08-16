@@ -281,7 +281,7 @@ header button {
 }
 
 .projects h2 {
-  width: 15rem;
+  width: 15rem !important;
   font-size: 4rem;
 }
 
@@ -492,12 +492,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 600ms;
+  transition: all 1000ms;
 }
 
 .card-box .svg img {
   width: 4rem;
   height: 4rem;
+  transition: all 100ms;
+
 }
 
 .card-box .svg:hover {
