@@ -53,20 +53,39 @@ p {
 }
 
 /* NavBar */
+header{
+    padding-left: 17rem;
+    padding-right: 17rem;
+}
+
 header nav {
-  background-color: var(--background);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 8.6rem;
-  align-items: baseline;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 8.6rem;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: baseline;
+}
+
+@media (max-width: 930px) {
+    header nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
 }
 
 header img {
-  display: flex;
-  flex-wrap: wrap;
-  width: 6rem;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 6rem;
 }
 
 header ul {
@@ -74,13 +93,17 @@ header ul {
   flex-direction: row;
 }
 
-header ul li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 3rem;
-  font-size: 1.7rem;
+header nav a{
+    color: black;
+    text-decoration: none;
 }
+
+header ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem;
+    font-size: 1.7rem;
 
 a {
   text-decoration: none;
@@ -209,68 +232,99 @@ header button {
 /* End Of hero Banner */
 
 /* Opinions Section */
-#opinions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  background-color: var(--opinions);
-  margin-left: 6rem;
-  margin-right: 6rem;
-  height: 62rem;
+#opinions{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #292E47;
+    /*
+    background-image: url("../images/testimonial-section/orbit.png");
+    */
+    background-position: center;
+    background-image: url("../images/testimonial-section/orbit.png"), linear-gradient(#292E47, #292E47);
+    background-size: cover;
+    height: 62rem;
+    margin-left: 7.6rem;
+    margin-right: 9.1rem;
 }
 
-#opinions .memojis {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+@media screen{
+    #opinions {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
-#opinions .memojis img {
-  width: 15rem;
+#opinions div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#opinions #centered {
-  align-items: center;
-  flex-direction: column;
+#opinions #center{
+    padding-top: 12rem;
 }
 
-#opinions #centered div {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+#opinions img{
+    height: 15rem;
+    width: 15rem;
 }
 
-#opinions #centered h3 {
-  color: white;
+#opinions div h3{
+    color: white;
+    text-align: center;
 }
 
-#opinions #centered p {
-  color: #ffc600;
+#opinions div p{
+    text-align: center;
+    color: #FFC600;
+    size: 2.4rem;
 }
 
-#opinions #centered div h6 {
-  color: #a2d6f9;
+#opinions #center div{
+    flex-direction: row;
+    padding-bottom: 5rem;
 }
 
-#opinions #centered div p {
-  color: white;
+#opinions #center div div{
+    flex-direction: column;
 }
 
-#opinions #centered div img {
-  border-radius: 60%;
-
-  width: 5rem;
-  height: 5rem;
+#opinions #center div p{
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    color: white;
+    size: 1.3rem;
+    padding: 0;
+    margin: 0;
 }
 
-#opinions #centered div div {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
+#opinions div div #name{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #A2D6F9;
+    size: 1.7rem;
+    padding: 5rem 0 0 0;
+    margin: 0;
+}
+
+#opinions #center #profilepic{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width:450px) {
+    #opinions div img{
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+    
 }
 
 /* Projects Section */
@@ -414,8 +468,6 @@ header button {
 
 
 /* Clients */
-
-
 
 .client-logo {
   margin-top: 4rem;
@@ -585,10 +637,62 @@ footer div:last-child ul li a:hover::before {
     margin: auto;
     background-color: #ffc600;
     max-width: 91%;
+
+
+/** Simplify **/
+
+#simplify{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 13.6rem 0 13.6rem 0 ;
+    padding-left: 17rem;
+    margin-right: 17rem;
+    margin-top: 17rem;
+}
+
+@media (max-width: 800px) {
+    #simplify{
+        padding-left: 0;
+        margin-right: 0;
+    }
+    
+}
+
+#simplify #imageback{
+    margin-top: 30rem;
+    width: 80%;
+    height: 40rem;
+    background-image: url("../images/projects-section/1.jpg");
+    filter: blur(8rem);
+    position: absolute;
+}
+
+@media (max-width: 1000px) {
+    #simplify #imageback{
+        width: 70%;
+    }
+}
+
+@media (max-width: 650px) {
+    #simplify #imageback{
+        width: 100%;
+    }
+}
+
+#simplify img{
+    margin-top: 10rem;
+    position: relative;
+    width: 100%;
+    height: 44rem;
+}
+
+#simplify div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#simplify #projectsText{
+    margin-top: 10rem;
 }
 
 #questions h2{
@@ -624,11 +728,9 @@ footer div:last-child ul li a:hover::before {
 
 #questions form input{
     /* position: relative; */
-
     border: none;
     
 }
-
 
 
 .input-form{
