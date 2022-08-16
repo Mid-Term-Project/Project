@@ -329,11 +329,11 @@ header button{
 
 #projects,
 #services {
-  margin: 2rem 15rem;
+  margin: 2rem 17rem;
 }
 
-.projects h2 {
-  width: 15rem !important;
+#projects h2 {
+  width: 15rem;
   font-size: 4rem;
 }
 
@@ -589,7 +589,7 @@ a {
     margin-top: 30rem;
     width: 80%;
     height: 40rem;
-    background-image: url("../images/projects-section/1.jpg");
+    background-image: url("../images/#-section/1.jpg");
     filter: blur(8rem);
     position: absolute;
 }
@@ -619,7 +619,7 @@ a {
     justify-content: space-between;
 }
 
-#simplify #projectsText{
+#simplify #Text{
     margin-top: 10rem;
 }
 
@@ -629,7 +629,7 @@ a {
 
 footer {
   display: flex;
-  margin: 6rem 15rem;
+  margin: 6rem 17rem;
   justify-content: space-between;
 }
 
@@ -664,14 +664,14 @@ footer div:last-child ul li {
   width: 25rem;
 }
 
-footer div:last-child ul li a {
+.a-animation {
   margin: 0;
   position: relative;
   text-decoration: none;
   color: var(--text);
 }
 
-footer div:last-child ul li a::before {
+.a-animation::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -685,7 +685,7 @@ footer div:last-child ul li a::before {
   transition: transform 300ms ease-in-out;
 }
 
-footer div:last-child ul li a:hover::before {
+.a-animation:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
