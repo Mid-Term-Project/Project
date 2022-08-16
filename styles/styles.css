@@ -204,6 +204,14 @@ header button{
     margin: 0;
 }
 
+@media (max-width:450px) {
+    #opinions div img{
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+    
+}
+
 /** Simplify **/
 
 #simplify{
