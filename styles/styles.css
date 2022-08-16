@@ -107,14 +107,15 @@ header ul li{
 }
 
 header button{
-    background-color: var(--btn);
-    border: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+    /* background-color: var(--btn);
     color: white;
     padding: 1.5rem 3.3rem;
-    text-align: center;
     text-decoration: none;
     font-size: 1.7rem;
-    cursor: pointer;
+   */
 }
 
 /* Hero Banner */
@@ -193,6 +194,7 @@ header button{
   transition: 0.5s;
   margin: 0;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn-get-in-touch:hover {
@@ -207,6 +209,7 @@ header button{
   display: inline-flex;
   align-items: center;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 #hero-banner .btn-see-our-work:hover {
