@@ -52,9 +52,10 @@ p {
   color: var(--text);
 }
 
+/*navbar*/
+
 header{
-    padding-left: 17rem;
-    padding-right: 17rem;
+    margin: 0 17rem;
 }
 
 header nav {
@@ -113,6 +114,7 @@ header button{
     text-align: center;
     text-decoration: none;
     font-size: 1.7rem;
+    cursor: pointer;
 }
 
 /* Hero Banner */
@@ -190,6 +192,7 @@ header button{
   padding: 1rem 3rem 1.2rem 3rem;
   transition: 0.5s;
   margin: 0;
+  cursor: pointer;
 }
 
 .btn-get-in-touch:hover {
@@ -243,11 +246,11 @@ header button{
     background-image: url("../images/testimonial-section/orbit.png"), linear-gradient(#292E47, #292E47);
     background-size: cover;
     height: 62rem;
-    margin-left: 7.6rem;
-    margin-right: 9.1rem;
+    width: 91%;
+    margin: auto;
 }
 
-@media screen{
+@media (max-width:800px){
     #opinions {
         margin-left: 0px;
         margin-right: 0px;
