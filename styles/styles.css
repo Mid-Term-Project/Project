@@ -744,6 +744,7 @@ footer div:last-child ul li {
     /* position: relative; */
 
     border: none;
+    outline: none;
     
 }
 
