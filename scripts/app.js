@@ -40,9 +40,7 @@ const appGlobal = async () => {
     const randomCard = result.sort(random);
 
     randomCard.slice(-3).forEach(element => {
-
         card.innerHTML += createCard(element);
-
     });
 
 }
