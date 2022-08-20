@@ -14,6 +14,10 @@ a{
   cursor: pointer;
 }
 
+section{
+  margin-bottom: 20rem !important;
+}
+
 :root {
   --opinions: #292e47;
   --title: #514d67;
@@ -393,6 +397,8 @@ header button{
 
 @media (max-width: 767px) {
   .container {
+    margin-left: 10rem;
+    margin-right: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -643,6 +649,7 @@ footer > div > img {
 }
 
 footer div:first-child {
+  width: 25rem;
   padding: 1.5rem;
   padding-left: 0;
 }
@@ -692,6 +699,38 @@ footer div:last-child ul li {
 .a-animation:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+@media (max-width: 1024px){
+  footer {
+    display: flex;
+    margin: 6rem 17rem;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  footer div:last-child ul{
+   padding-left: 0px;
+  }
+  footer div:last-child ul li{
+   text-align: center;
+  }
+
+  footer div:first-child {
+    width: 42rem;
+    text-align: center;
+  }
+  footer div:first-child p{
+    margin: 3rem auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px){
+  .button-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* End of footer */
@@ -765,8 +804,3 @@ footer div:last-child ul li {
     font-size: 1.3rem;
 }
 /* End  Questions */
-
-
-.test{
-  background: linear-gradient(90deg, rgba(255,131,40,1) 0%, rgba(0,162,242,1) 48%, rgba(157,15,231,1) 100%);
-}
