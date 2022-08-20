@@ -236,5 +236,44 @@ const appGlobal = async () => {
 
 }
 
+/* Hamburguer */
+const hamburguer = document.querySelector(".hamburguer");
+const navMenu = document.querySelector(".nav-menu");
+const header = document.querySelector("header")
+let margin = true;
+
+hamburguer.addEventListener("click", () => {
+    if(margin){
+        header.style.marginBottom = "12rem"
+        margin = false;
+    }else{
+        header.style.marginBottom = "2rem"
+        margin = true;
+    }
+    hamburguer.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    
+});
+
+
+
+document.querySelectorAll(".nav-link").forEach(
+    n=> n.addEventListener("click", () => {
+        hamburguer.classList.remove("active");
+        navMenu.classList.remove("active");
+        header.style.marginBottom = "2rem";
+        margin = true;
+    }
+     
+))
+
+document.querySelectorAll(".hamburger").forEach(
+    n=> n.addEventListener("click", () => {
+        hamburguer.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+     
+))
+
 appGlobal()
 
