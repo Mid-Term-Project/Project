@@ -497,7 +497,7 @@ a{
     padding: 0 2rem 0 2rem;
   }
 
-  .text-align h1 {
+  .text-align h1, #form h1 {
     font-size: 4.5rem;
     line-height: 6rem;
   }
@@ -586,6 +586,17 @@ a{
 
     #questions h2{
     font-size: 3.5rem;
+    }
+
+    /* Formulario Contact page */
+    #form fieldset:nth-child(2){
+      flex-direction: column;
+      width: 100%;
+    }
+
+    #form fieldset:nth-child(2) div #email{
+      margin-right: 0 !important;
+      margin-bottom: 1.2rem;
     }
 
 }
@@ -857,6 +868,12 @@ footer div:last-child ul li {
     margin: 3rem auto;
     text-align: center;
   }
+
+  #form{
+    margin-left: 6rem !important;
+    margin-right: 6rem !important;
+    
+  }
 }
 
 @media (max-width: 767px){
@@ -937,3 +954,79 @@ footer div:last-child ul li {
     font-size: 1.3rem;
 }
 /* End  Questions */
+
+
+/* Contact page */
+#form{
+  margin: 16rem 17rem 18rem 17rem;
+  
+}
+
+#form h1{
+  margin-bottom: 8rem;
+}
+
+#form fieldset{
+  margin-bottom: 4rem;
+  border: none;
+}
+
+#form fieldset label{
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 1rem;
+  
+}
+
+#form fieldset input, textarea{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text);
+  outline: none;
+  border: none;
+  height: 7rem;
+  padding-left: 1rem;
+  background-color: rgba(107, 112, 141, 0.1);
+}
+
+#form fieldset:nth-child(1){
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#form fieldset:nth-child(2){
+  display: flex;
+  align-items: center;
+}
+
+#form fieldset:nth-child(2) div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#form fieldset:nth-child(2) div #email{
+  margin-right: 1rem;
+}
+
+#form fieldset:nth-child(2) div #phone{
+  
+  margin-right: 0;
+
+}
+
+#form fieldset:nth-child(3){
+  display: flex;
+  flex-direction: column;
+}
+
+#submit{
+  text-align: center;
+  height: 6rem;
+  width: 100%;
+  border: none;
+}
+
