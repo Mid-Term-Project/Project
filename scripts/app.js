@@ -70,7 +70,7 @@ const createCard = ({image, name, description, content}) => {
     <img src="${image}" alt="img - ${name}">
     <h3>${name}</h3>
     <p>${description}</p>
-    <a onclick="generate('${image}','${name}','${description}','${content}')">Learn more</a>
+    <a href="#navbar" onclick="generate('${image}','${name}','${description}','${content}')">Learn more</a>
     </div>
 `
 }
@@ -187,13 +187,30 @@ const fectAPI = async () => {
 }
 
 
-const generate = (image, name, description, content) => {
-    console.log(name)
+const generate = async (image, name, description, content) => {
     spa.innerHTML = "";
+
     const pageProject = document.createElement("section");
     pageProject.setAttribute("id", "simplify");
     spa.appendChild(pageProject);
     simplify.innerHTML = createPageProject(image, name, description, content);
+
+    const pageProjectList = document.createElement("section");
+    pageProjectList.setAttribute("id", "projects");
+    spa.appendChild(pageProjectList);
+    const h2 = document.createElement("h2")
+    const divCardProjects = document.createElement("div");
+    h2.innerText = "Other Projects";
+    divCardProjects.setAttribute("id","cards-projects");
+    divCardProjects.className = "cards";
+    const result = await fectAPI();
+    const randomCard = result.sort(random);
+    randomCard.filter(element => element.name !== name).slice(-3).forEach(element => {
+        divCardProjects.innerHTML += createCard(element);
+    });
+    pageProjectList.appendChild(h2);
+    pageProjectList.appendChild(divCardProjects);
+
     const pageProjectQuestion = document.createElement("section");
     pageProjectQuestion.setAttribute("id", "questions")
     spa.appendChild(pageProjectQuestion);
@@ -210,7 +227,7 @@ const appGlobal = async () => {
     const result = await fectAPI();
     const randomCard = result.sort(random);
 
-    randomCard.slice(-3).map(element => {
+    randomCard.slice(-3).forEach(element => {
         card.innerHTML += createCard(element);
     });
 
