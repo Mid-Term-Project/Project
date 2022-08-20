@@ -800,3 +800,12 @@ footer div:last-child ul li {
   display: flex;
   flex-direction: column;
 }
+
+#form fieldset:nth-child(2){
+  display: flex;
+}
+
+#form fieldset:nth-child(2) input{
+  color: #072ac8;
+}
+
