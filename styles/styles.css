@@ -1,5 +1,5 @@
 * {
-  margin: 0px;
+  margin-top: 0px;
   padding: 0px;
 }
 
@@ -8,10 +8,6 @@ html {
   font-size: 62.5%;
   background-color: var(--background);
   font-family: "Roboto", sans-serif;
-}
-
-a{
-  cursor: pointer;
 }
 
 :root {
@@ -126,15 +122,15 @@ header button{
 
 .container {
   max-width: 144rem;
-  margin: 0 17rem 0 17rem;
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
+  padding: 0 17rem 0 17rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
   display: flex;
   flex-direction: row;
+  padding: 0 1.2rem 0 1.2rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -504,6 +500,11 @@ header button{
   width: 4rem;
   background-color: red;
   height: 3rem;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 
@@ -591,11 +592,11 @@ a {
 }
 
 #simplify #imageback{
-    margin-top: 25rem;
+    margin-top: 30rem;
     width: 80%;
     height: 40rem;
-    background: linear-gradient(90deg, rgba(255,131,40,1) 0%, rgba(0,162,242,1) 48%, rgba(157,15,231,1) 100%);
-    filter: blur(10rem);
+    background-image: url("../images/#-section/1.jpg");
+    filter: blur(8rem);
     position: absolute;
 }
 
@@ -766,8 +767,3 @@ footer div:last-child ul li {
     font-size: 1.3rem;
 }
 /* End  Questions */
-
-
-.test{
-  background: linear-gradient(90deg, rgba(255,131,40,1) 0%, rgba(0,162,242,1) 48%, rgba(157,15,231,1) 100%);
-}
