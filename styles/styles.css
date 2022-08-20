@@ -767,3 +767,36 @@ footer div:last-child ul li {
     font-size: 1.3rem;
 }
 /* End  Questions */
+
+/* Contact page */
+
+ #form{
+  margin: 16rem 17rem 18rem 17rem;
+  
+}
+
+#form fieldset{
+  margin-bottom: 4rem;
+  border: none;
+}
+
+#form fieldset label{
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 1rem;
+  
+}
+
+#form fieldset input{
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text);
+  outline: none;
+  border: none;
+}
+
+#form fieldset:nth-child(1){
+  display: flex;
+  flex-direction: column;
+}
