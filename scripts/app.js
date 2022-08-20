@@ -204,8 +204,7 @@ const generate = async (image, name, description, content) => {
     divCardProjects.setAttribute("id","cards-projects");
     divCardProjects.className = "cards";
     const result = await fectAPI();
-    const randomCard = result.sort(random);
-    randomCard.filter(element => element.name !== name).slice(-3).forEach(element => {
+    result.filter(element => element.name !== name).slice(-3).forEach(element => {
         divCardProjects.innerHTML += createCard(element);
     });
     pageProjectList.appendChild(h2);
