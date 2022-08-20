@@ -1,5 +1,5 @@
 * {
-  margin-top: 0px;
+  margin: 0px;
   padding: 0px;
 }
 
@@ -8,6 +8,14 @@ html {
   font-size: 62.5%;
   background-color: var(--background);
   font-family: "Roboto", sans-serif;
+}
+
+a{
+  cursor: pointer;
+}
+
+section{
+  margin-bottom: 20rem !important;
 }
 
 :root {
@@ -53,84 +61,164 @@ p {
 }
 
 /*navbar*/
+/* NavBar */
 
 header{
-    margin: 0 17rem;
+  margin: 0 17rem;
+  padding-top: 8.5rem;
 }
 
-header nav {
-    background-color: var(--background);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 8.6rem;
-    padding-left: 0;
-    padding-right: 0;
-    align-items: baseline;
+li{
+  list-style: none;
 }
 
-@media (max-width: 930px) {
-    header nav{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
+a{
+  color: var(--title);
+  text-decoration: none;
 }
 
-header img {
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
-    flex-wrap: wrap;
-    width: 6rem;
+.navbar{
+  font-size: 17px;
+  background-color: var(--background);
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 24px
 }
 
-header ul{
-    display: flex;
-    flex-direction: row;
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
 }
 
-header nav a{
-    color: black;
-    text-decoration: none;
+.navbar img {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 6rem;
 }
 
-header ul li{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 3rem;
-    font-size: 1.7rem;
+.nav-link{
+  transition: 0.7s ease;
 }
 
-header button{
+.navlink:hover{
+  color: var(--hover);
+}
+
+.navbar button{
+  background-color: var(--btn);
   border: none;
+  color: white;
+  padding: 1.5rem 3.3rem;
   text-align: center;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.hamburguer{
+  display: none;
   cursor: pointer;
-    /* background-color: var(--btn);
-    color: white;
-    padding: 1.5rem 3.3rem;
-    text-decoration: none;
-    font-size: 1.7rem;
-   */
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--btn);
+}
+
+.hide {
+  display: none;
+}
+
+@media(max-width:900px){
+  header {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      padding-top: 8.5rem;
+  }
+
+  .navbar{
+      align-items: center;
+  }
+
+  .navbar img {
+      padding-left: 0;
+      padding-right: 10rem;
+      display: flex;
+      flex-wrap: wrap;
+      width: 6rem;
+  }
+
+  .hamburguer{
+      display: block;
+  }
+
+  .hamburguer.active .bar:nth-child(2){
+      opacity: 0;
+  }
+
+  .hamburguer.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburguer.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: var(--background);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+  }
+
+  .nav-item{
+      margin: 16px 0;
+      list-style: none;
+      text-decoration: none;
+  }
+
+  .nav-menu.active{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      left: 0;
+  }
+
+  .hide {
+      display: flex;
+  }
+
 }
 
 /* Hero Banner */
 
 .container {
   max-width: 144rem;
-  padding: 0 17rem 0 17rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 17rem 0 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  padding: 0 1.2rem 0 1.2rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -335,11 +423,10 @@ header button{
 
 #projects,
 #services {
-  margin: 2rem 17rem;
+  margin: 0rem 17rem;
 }
 
 #projects h2 {
-  width: 15rem;
   font-size: 4rem;
 }
 
@@ -369,6 +456,37 @@ header button{
   height: 24rem;
 }
 
+@media (max-width: 1024px){
+  #projects,
+  #services {
+    margin: 0rem 10rem;
+  }
+
+  #projects h2 {
+    text-align: center;
+  }
+  .cards{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px){
+
+  #projects,
+  #services {
+    margin: 0rem 10rem;
+  }
+
+  #projects h2 {
+    text-align: center;
+  }
+
+  .cards{
+    justify-content: center;
+  }
+}
+
 /* Media Query */
 
 @media (max-width: 1024px) {
@@ -376,7 +494,7 @@ header button{
     padding: 0 2rem 0 2rem;
   }
 
-  .text-align h1 {
+  .text-align h1, #form h1 {
     font-size: 4.5rem;
     line-height: 6rem;
   }
@@ -390,6 +508,8 @@ header button{
 
 @media (max-width: 767px) {
   .container {
+    margin-left: 10rem;
+    margin-right: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -465,6 +585,17 @@ header button{
     font-size: 3.5rem;
     }
 
+    /* Formulario Contact page */
+    #form fieldset:nth-child(2){
+      flex-direction: column;
+      width: 100%;
+    }
+
+    #form fieldset:nth-child(2) div #email{
+      margin-right: 0 !important;
+      margin-bottom: 1.2rem;
+    }
+
 }
 
   /* End MEdia query */
@@ -500,11 +631,6 @@ header button{
   width: 4rem;
   background-color: red;
   height: 3rem;
-
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
 }
 
 
@@ -572,6 +698,25 @@ a {
   margin-bottom: 4rem;
 }
 
+@media (max-width: 1024px){
+  section{
+    margin-bottom: 10rem !important;
+  }
+  #services h2{
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px){
+  section{
+    margin-bottom: 10rem !important;
+  }
+  
+  #services h2{
+    text-align: center;
+  }
+}
+
 /** Simplify **/
 
 #simplify{
@@ -592,11 +737,11 @@ a {
 }
 
 #simplify #imageback{
-    margin-top: 30rem;
+    margin-top: 25rem;
     width: 80%;
     height: 40rem;
-    background-image: url("../images/#-section/1.jpg");
-    filter: blur(8rem);
+    background: linear-gradient(90deg, rgba(255,131,40,1) 0%, rgba(0,162,242,1) 48%, rgba(157,15,231,1) 100%);
+    filter: blur(10rem);
     position: absolute;
 }
 
@@ -645,6 +790,7 @@ footer > div > img {
 }
 
 footer div:first-child {
+  width: 25rem;
   padding: 1.5rem;
   padding-left: 0;
 }
@@ -694,6 +840,44 @@ footer div:last-child ul li {
 .a-animation:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+@media (max-width: 1024px){
+  footer {
+    display: flex;
+    margin: 6rem 17rem;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  footer div:last-child ul{
+   padding-left: 0px;
+  }
+  footer div:last-child ul li{
+   text-align: center;
+  }
+
+  footer div:first-child {
+    width: 42rem;
+    text-align: center;
+  }
+  footer div:first-child p{
+    margin: 3rem auto;
+    text-align: center;
+  }
+
+  #form{
+    margin-left: 6rem !important;
+    margin-right: 6rem !important;
+    
+  }
+}
+
+@media (max-width: 767px){
+  .button-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* End of footer */
@@ -768,11 +952,15 @@ footer div:last-child ul li {
 }
 /* End  Questions */
 
-/* Contact page */
 
- #form{
+/* Contact page */
+#form{
   margin: 16rem 17rem 18rem 17rem;
   
+}
+
+#form h1{
+  margin-bottom: 8rem;
 }
 
 #form fieldset{
@@ -788,24 +976,54 @@ footer div:last-child ul li {
   
 }
 
-#form fieldset input{
-  font-size: 2rem;
+#form fieldset input, textarea{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--text);
   outline: none;
   border: none;
+  height: 7rem;
+  padding-left: 1rem;
+  background-color: rgba(107, 112, 141, 0.1);
 }
 
 #form fieldset:nth-child(1){
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 #form fieldset:nth-child(2){
   display: flex;
+  align-items: center;
 }
 
-#form fieldset:nth-child(2) input{
-  color: #072ac8;
+#form fieldset:nth-child(2) div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#form fieldset:nth-child(2) div #email{
+  margin-right: 1rem;
+}
+
+#form fieldset:nth-child(2) div #phone{
+  
+  margin-right: 0;
+
+}
+
+#form fieldset:nth-child(3){
+  display: flex;
+  flex-direction: column;
+}
+
+#submit{
+  text-align: center;
+  height: 6rem;
+  width: 100%;
+  border: none;
 }
 
