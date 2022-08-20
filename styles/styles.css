@@ -343,7 +343,7 @@ header button{
 
 #projects,
 #services {
-  margin: 2rem 17rem;
+  margin: 0rem 17rem;
 }
 
 #projects h2 {
@@ -374,6 +374,37 @@ header button{
 .card-box img {
   width: 34rem;
   height: 24rem;
+}
+
+@media (max-width: 1024px){
+  #projects,
+  #services {
+    margin: 0rem 10rem;
+  }
+
+  #projects h2 {
+    text-align: center;
+  }
+  .cards{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px){
+
+  #projects,
+  #services {
+    margin: 0rem 10rem;
+  }
+
+  #projects h2 {
+    text-align: center;
+  }
+
+  .cards{
+    justify-content: center;
+  }
 }
 
 /* Media Query */
@@ -574,6 +605,25 @@ a {
 
 #services .cards .card-box p {
   margin-bottom: 4rem;
+}
+
+@media (max-width: 1024px){
+  section{
+    margin-bottom: 10rem !important;
+  }
+  #services h2{
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px){
+  section{
+    margin-bottom: 10rem !important;
+  }
+  
+  #services h2{
+    text-align: center;
+  }
 }
 
 /** Simplify **/
