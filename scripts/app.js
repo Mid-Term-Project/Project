@@ -70,7 +70,7 @@ const createCard = ({uuid, image, name, description, content}) => {
     <img src="${image}" alt="img - ${name}">
     <h3>${name}</h3>
     <p>${description}</p>
-    <a href="#navbar" onclick="generate('${uuid}', '${image}','${name}','${description}','${content}')">Learn more</a>
+    <a href="#header" onclick="generate('${uuid}', '${image}','${name}','${description}','${content}')">Learn more</a>
     </div>
 `
 }
