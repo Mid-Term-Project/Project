@@ -263,7 +263,7 @@ document.querySelectorAll(".nav-link").forEach(
         hamburguer.classList.remove("active");
         navMenu.classList.remove("active");
         header.style.marginBottom = "2rem";
-        margin = true;
+        margin = true
     }
      
 ))
