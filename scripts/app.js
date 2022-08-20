@@ -63,14 +63,14 @@ const createCompanys = () => {
 }
 
 
-const createCard = ({image, name, description, content}) => {
+const createCard = ({uuid, image, name, description, content}) => {
 
     return `
     <div class="card-box card-box-hover">
     <img src="${image}" alt="img - ${name}">
     <h3>${name}</h3>
     <p>${description}</p>
-    <a href="#navbar" onclick="generate('${image}','${name}','${description}','${content}')">Learn more</a>
+    <a href="#navbar" onclick="generate('${uuid}', '${image}','${name}','${description}','${content}')">Learn more</a>
     </div>
 `
 }
@@ -187,7 +187,7 @@ const fectAPI = async () => {
 }
 
 
-const generate = async (image, name, description, content) => {
+const generate = async (uuid, image, name, description, content) => {
     spa.innerHTML = "";
 
     const pageProject = document.createElement("section");
@@ -204,7 +204,8 @@ const generate = async (image, name, description, content) => {
     divCardProjects.setAttribute("id","cards-projects");
     divCardProjects.className = "cards";
     const result = await fectAPI();
-    result.filter(element => element.name !== name).slice(-3).forEach(element => {
+    const randomCard = result.sort(random);
+    randomCard.filter(element => element.uuid !== uuid).slice(-3).forEach(element => {
         divCardProjects.innerHTML += createCard(element);
     });
     pageProjectList.appendChild(h2);
