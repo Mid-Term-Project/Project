@@ -74,7 +74,7 @@ a{
     min-height: 70px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 0 24px
 }
 
@@ -136,6 +136,10 @@ a{
         flex-wrap: nowrap;
         justify-content: space-around;
         padding-top: 8.5rem;
+    }
+
+    .navbar{
+        align-items: center;
     }
 
     .navbar img {
