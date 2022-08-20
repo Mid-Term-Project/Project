@@ -54,17 +54,13 @@ p{
 
 /* NavBar */
 
-
-/** Prueba **/
-
 header{
-    padding-left: 17rem;
-    padding-right: 17rem;
-    background-color: var(--background);
+    margin: 0 17rem;
+    padding-top: 8.5rem;
 }
 
 li{
-    text-decoration: none;
+    list-style: none;
 }
 
 a{
@@ -73,6 +69,7 @@ a{
 }
 
 .navbar{
+    background-color: var(--background);
     min-height: 70px;
     display: flex;
     justify-content: space-between;
@@ -128,7 +125,26 @@ a{
     background-color: var(--btn);
 }
 
-@media(max-width:768px){
+.hide {
+    display: none;
+}
+
+@media(max-width:850px){
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding-top: 8.5rem;
+    }
+
+    .navbar img {
+        padding-left: 0;
+        padding-right: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 6rem;
+    }
+
     .hamburguer{
         display: block;
     }
@@ -159,10 +175,19 @@ a{
 
     .nav-item{
         margin: 16px 0;
+        list-style: none;
+        text-decoration: none;
     }
 
     .nav-menu.active{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
         left: 0;
+    }
+
+    .hide {
+        display: flex;
     }
 
 }
