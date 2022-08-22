@@ -78,15 +78,15 @@ const createCard = ({uuid, image, name, description, content}) => {
 const createOpinions = () => {
     return `
     <div>
-            <img src="../images/testimonial-section/memoji-1.png" alt="Blond girl memoji">
-            <img src="../images/testimonial-section/memoji-2.png" alt="Man with hat memoji">
+            <img src="./images/testimonial-section/memoji-1.png" alt="Blond girl memoji">
+            <img src="./images/testimonial-section/memoji-2.png" alt="Man with hat memoji">
         </div>
         <div id="center">
             <h3>Hear What Our Clients Have to Say</h3>
             <p>"Circle helped us through very stage of our startup. <br>
                 We really enjoyed working with you."</p>
             <div>   
-                <img id="profilepic" src="../images/testimonial-section/profile.png" alt="Profile pic">
+                <img id="profilepic" src="./images/testimonial-section/profile.png" alt="Profile pic">
                 <div>
                     <p id="name">Kristin Watson<p>
                     <p>Booking.com</p>
@@ -94,8 +94,8 @@ const createOpinions = () => {
             </div>
         </div>
         <div>
-            <img src="../images/testimonial-section/memoji-3.png" alt="Bearb man memoji">
-            <img src="../images/testimonial-section/memoji-4.png" alt="Party man memoji">
+            <img src="./images/testimonial-section/memoji-3.png" alt="Bearb man memoji">
+            <img src="./images/testimonial-section/memoji-4.png" alt="Party man memoji">
         </div>
     `
 }
