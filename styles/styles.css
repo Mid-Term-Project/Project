@@ -77,6 +77,16 @@ a{
   text-decoration: none;
 }
 
+::-webkit-scrollbar{
+  background-color: var(--background);
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--text);
+  border-radius: 0.5rem;
+}
+
 .navbar{
   font-size: 17px;
   background-color: var(--background);
