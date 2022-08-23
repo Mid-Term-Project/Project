@@ -355,13 +355,14 @@ a{
     width: 91%;
     margin: auto;
 }
-
+/**
 @media (max-width:800px){
     #opinions {
         margin-left: 0px;
         margin-right: 0px;
     }
 }
+**/
 
 #opinions div{
     display: flex;
