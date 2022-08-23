@@ -108,7 +108,7 @@ a{
 
 .navbar img {
   padding-left: 0;
-  padding-right: 5rem;
+  padding-right: 2rem;
   display: flex;
   flex-wrap: wrap;
   width: 6rem;
@@ -444,6 +444,7 @@ a{
 
 #projects h2 {
   font-size: 4rem;
+  margin-bottom: 5rem;
 }
 
 .cards {
@@ -480,6 +481,7 @@ a{
 
   #projects h2 {
     text-align: center;
+    margin-bottom: 5rem;
   }
   .cards{
     flex-direction: column;
@@ -496,6 +498,7 @@ a{
 
   #projects h2 {
     text-align: center;
+    margin-bottom: 5rem;
   }
 
   .cards{
@@ -540,8 +543,7 @@ a{
     margin-top: 3rem;
   }
 
-  .text-align h1,
-  p {
+  .text-align h1, .text-align p{
     text-align: center;
   }
 
@@ -679,6 +681,11 @@ a {
 }
 
 /* services */
+
+#services h2{
+  margin-bottom: 5rem;
+}
+
 #services .card-box {
   height: 34rem;
 }
@@ -720,6 +727,7 @@ a {
   }
   #services h2{
     text-align: center;
+    margin-bottom: 5rem;
   }
 }
 
@@ -730,6 +738,7 @@ a {
   
   #services h2{
     text-align: center;
+    margin-bottom: 5rem;
   }
 }
 
