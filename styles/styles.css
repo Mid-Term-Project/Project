@@ -191,7 +191,7 @@ a{
   }
 
   .nav-menu{
-      position: fixed;
+      position: absolute;
       left: -100%;
       top: 70px;
       gap: 0;
