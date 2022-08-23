@@ -1003,6 +1003,10 @@ footer div:last-child ul li {
   background-color: rgba(107, 112, 141, 0.1);
 }
 
+#form fieldset textarea{
+  padding-top: 1.5rem;
+}
+
 #form fieldset:nth-child(1){
   width: 100%;
   display: flex;
