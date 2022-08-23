@@ -63,7 +63,7 @@ const createCompanys = () => {
 }
 
 
-const createCard = ({uuid, image, name, description, content}) => {
+const createCard = ({ uuid, image, name, description, content }) => {
 
     return `
     <div class="card-box card-box-hover">
@@ -165,6 +165,39 @@ const createPageProject = (image, name, description, content) => {
     `
 }
 
+const createContactForm = () => {
+    return `
+    <section id="form">
+    <h1>Contact Us</h1>
+    <form>
+        <fieldset>
+            <label for="name">Full Name *</label>
+            <input type="text" name="name" id="name" placeholder="Enter your full name">
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+            </div>
+
+           <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+           </div>
+
+        </fieldset>
+
+        <fieldset>
+            <label for="textarea">Message</label>
+            <textarea  cols="24" rows="10" type="text" name="textarea" id="textarea" placeholder="Write your message here ...."></textarea>
+        </fieldset>
+        <input id="submit" class="btn-get-in-touch" type="submit" value="Submit">
+    </form>
+</section>
+    `
+}
+
 const spa = document.getElementById("spa");
 const heroBanner = document.getElementById("hero-banner");
 const companys = document.getElementById("companys");
@@ -186,6 +219,14 @@ const fectAPI = async () => {
     }
 }
 
+const contact = () => {
+    spa.innerHTML = "";
+
+    const pageContact = document.createElement("section");
+    pageContact.setAttribute("id", "form");
+    spa.appendChild(pageContact);
+    pageContact.innerHTML = createContactForm();
+}
 
 const generate = async (uuid, image, name, description, content) => {
     spa.innerHTML = "";
@@ -193,7 +234,7 @@ const generate = async (uuid, image, name, description, content) => {
     const pageProject = document.createElement("section");
     pageProject.setAttribute("id", "simplify");
     spa.appendChild(pageProject);
-    simplify.innerHTML = createPageProject(image, name, description, content);
+    pageProject.innerHTML = createPageProject(image, name, description, content);
 
     const pageProjectList = document.createElement("section");
     pageProjectList.setAttribute("id", "projects");
@@ -201,7 +242,7 @@ const generate = async (uuid, image, name, description, content) => {
     const h2 = document.createElement("h2")
     const divCardProjects = document.createElement("div");
     h2.innerText = "Other Projects";
-    divCardProjects.setAttribute("id","cards-projects");
+    divCardProjects.setAttribute("id", "cards-projects");
     divCardProjects.className = "cards";
     const result = await fectAPI();
     const randomCard = result.sort(random);
@@ -223,7 +264,7 @@ const appGlobal = async () => {
     card.innerHTML = "";
     heroBanner.innerHTML = createHeroBanner();
     companys.innerHTML = createCompanys();
-    
+
     const result = await fectAPI();
     const randomCard = result.sort(random);
 
@@ -233,7 +274,7 @@ const appGlobal = async () => {
 
     opinions.innerHTML = createOpinions();
     services.innerHTML = createServices();
-    questions.innerHTML =createQuestions();
+    questions.innerHTML = createQuestions();
 
 }
 
@@ -244,37 +285,37 @@ const header = document.querySelector("header")
 let margin = true;
 
 hamburguer.addEventListener("click", () => {
-    if(margin){
+    if (margin) {
         header.style.marginBottom = "12rem"
         margin = false;
-    }else{
+    } else {
         header.style.marginBottom = "2rem"
         margin = true;
     }
     hamburguer.classList.toggle("active");
     navMenu.classList.toggle("active");
-    
+
 });
 
 
 
 document.querySelectorAll(".nav-link").forEach(
-    n=> n.addEventListener("click", () => {
+    n => n.addEventListener("click", () => {
         hamburguer.classList.remove("active");
         navMenu.classList.remove("active");
         header.style.marginBottom = "2rem";
         margin = true
     }
-     
-))
+
+    ))
 
 document.querySelectorAll(".hamburger").forEach(
-    n=> n.addEventListener("click", () => {
+    n => n.addEventListener("click", () => {
         hamburguer.classList.remove("active");
         navMenu.classList.remove("active");
     }
-     
-))
+
+    ))
 
 appGlobal()
 
