@@ -782,11 +782,12 @@ a {
     }
 }
 
+
 #simplify img{
-    margin-top: 10rem;
-    position: relative;
-    width: 100%;
-    height: 44rem;
+  margin-top: 10rem;
+  position: relative;
+  width: 100%;
+  height: 44rem;
 }
 
 #simplify div{
@@ -1043,8 +1044,16 @@ footer div:last-child ul li {
   flex-direction: column;
 }
 
+#form fieldset #name:invalid{
+  background-color: tomato;
+}
+
 #form fieldset:nth-child(2) div #email{
   margin-right: 1rem;
+}
+
+#form fieldset:nth-child(2) div #email:invalid{
+  border: 2px solid tomato;
 }
 
 #form fieldset:nth-child(2) div #phone{

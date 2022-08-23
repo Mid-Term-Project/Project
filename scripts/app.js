@@ -168,7 +168,7 @@ const createPageProject = (image, name, description, content) => {
 const createContactForm = () => {
     return `
     <h1>Contact Us</h1>
-    <form onsubmit="test(event)">
+    <form name="myForm" onsubmit="return validateForm(event)">
         <fieldset>
             <label for="name">Full Name *</label>
             <input type="text" name="name" id="name" placeholder="Enter your full name">
@@ -216,9 +216,28 @@ const fectAPI = async () => {
     }
 }
 
-const test = (event) => {
-    console.log(event)
-    event.preventDefault()
+const validateForm = (event) => {
+
+    let validEmail = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+    const emailForm = document.getElementById("email")
+
+    const name = document.forms["myForm"]["name"].value;
+    const email = document.forms["myForm"]["email"].value;
+
+    if (name.toLowerCase() == "ironhack") {
+        alert("Name must be filled out");
+        return false;
+    }
+
+    if (validEmail.test(email)) {
+        return true;
+    } else {
+        alert("Email must be filled out");
+        event.preventDefault()
+        emailForm.style.border = "2px solid tomato"
+        return false;
+    }
+
 }
 
 const contact = () => {
