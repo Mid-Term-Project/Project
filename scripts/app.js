@@ -168,7 +168,7 @@ const createPageProject = (image, name, description, content) => {
 const createContactForm = () => {
     return `
     <h1>Contact Us</h1>
-    <form>
+    <form onsubmit="test(event)">
         <fieldset>
             <label for="name">Full Name *</label>
             <input type="text" name="name" id="name" placeholder="Enter your full name">
@@ -205,7 +205,6 @@ const opinions = document.getElementById("opinions");
 const services = document.getElementById("services");
 const questions = document.getElementById("questions");
 
-
 const fectAPI = async () => {
     try {
 
@@ -215,6 +214,11 @@ const fectAPI = async () => {
     } catch (error) {
         return []
     }
+}
+
+const test = (event) => {
+    console.log(event)
+    event.preventDefault()
 }
 
 const contact = () => {
