@@ -162,7 +162,7 @@ a{
   .navbar{
       align-items: center;
       width: 100%;
-      justify-content: space-between;
+      justify-content: center;
 
   }
 
@@ -493,7 +493,7 @@ a{
 
   #projects,
   #services {
-    margin: 0rem 10vw;
+    margin: 0;
   }
 
   #projects h2 {
@@ -903,6 +903,15 @@ footer div:last-child ul li {
     display: flex;
     flex-direction: column;
   }
+
+  footer div{
+    padding-right: 0 !important;
+  }
+
+  footer div ul{
+    padding-right: 0 !important;
+  }
+
 }
 
 /* End of footer */
