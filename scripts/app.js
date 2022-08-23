@@ -167,7 +167,6 @@ const createPageProject = (image, name, description, content) => {
 
 const createContactForm = () => {
     return `
-    <section id="form">
     <h1>Contact Us</h1>
     <form>
         <fieldset>
@@ -194,7 +193,6 @@ const createContactForm = () => {
         </fieldset>
         <input id="submit" class="btn-get-in-touch" type="submit" value="Submit">
     </form>
-</section>
     `
 }
 
