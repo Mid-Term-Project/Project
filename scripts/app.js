@@ -200,8 +200,9 @@ const createPageError = () => {
     return `
         
             <div class="fof">
-                <div>
-                    <h1>Error 404</h1>
+                <div id="message">
+                    <h1>ERROR 404</h1>
+                    <h4>THE PAGE YOU WERE LOOKING FOR DOESN'T EXIST.</h3>
                 </div>
                 <div>
                     <button onclick="location.reload()">Home</button>

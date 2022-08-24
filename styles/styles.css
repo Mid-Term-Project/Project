@@ -1089,7 +1089,11 @@ footer div:last-child ul li {
   vertical-align: middle;
 }
 
-.fof h1{
+#message{
+  margin-bottom: 2rem;
+}
+
+.fof #message h1{
   font-size: 5rem;
   display: inline-block;
   padding-right: 12px;
