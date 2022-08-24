@@ -16,7 +16,7 @@ const createHeroBanner = () => {
                     <h1>Empower Your Business With Stunning Design!</h1>
                     <p class="text">Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
                     <div class="button-wrapper">
-                        <a href="#" class="btn-get-in-touch">Get in touch</a>
+                        <a href="#" class="btn-get-in-touch" onclick="generatePageError()">Get in touch</a>
                         <a href="#" class="btn-see-our-work">See our work</a>
                     </div>
                 </div>
@@ -196,6 +196,22 @@ const createContactForm = () => {
     `
 }
 
+const createPageError = () => {
+    return `
+        
+            <div class="fof">
+                <div>
+                    <h1>Error 404</h1>
+                </div>
+                <div>
+                    <button onclick="location.reload()">Home</button>
+                </div>
+            </div>
+        
+    `
+}
+
+const body = document.querySelector("body");
 const spa = document.getElementById("spa");
 const heroBanner = document.getElementById("hero-banner");
 const companys = document.getElementById("companys");
@@ -214,6 +230,14 @@ const fectAPI = async () => {
     } catch (error) {
         return []
     }
+}
+
+const generatePageError = () => {
+    body.innerHTML = "";
+    const pageError = document.createElement("section");
+    pageError.setAttribute("id", "error");
+    body.appendChild(pageError);
+    pageError.innerHTML = createPageError();
 }
 
 const validateForm = (event) => {
