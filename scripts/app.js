@@ -158,7 +158,7 @@ const createPageProject = (image, name, description, content) => {
             <p>Completed on June 22, 2021</p>
         </div>
         <img id="imageback" alt="">
-        <img src="${image}" alt="">
+        <img id = "img-hero" src="${image}" alt="">
         <p id = "projectsText">
                 ${content}
         </p>
