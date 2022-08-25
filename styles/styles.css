@@ -767,7 +767,7 @@ a {
     width: 80%;
     height: 40rem;
     background: linear-gradient(90deg, rgba(255,131,40,1) 0%, rgba(0,162,242,1) 48%, rgba(157,15,231,1) 100%);
-    filter: blur(10rem);
+    filter: blur(5rem);
     position: absolute;
 }
 
